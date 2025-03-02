@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background:  #12182a;
+    color: white;             
+    height: 100vh;            
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  
+
+@keyframes fadeUpText {
+  0% {
+    opacity: 0.2;
+    transform: translateY(80px);  
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);  
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0.2;
+    transform: translateX(100px);  
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);  
+  }
+}
+
+.btnLogin-popup {
+  position: absolute;
+  width: 220px;
+  height: 110px;
+  background: transparent;
+  border: 5px solid #9167fb;
+  outline: none;
+  border-radius: 200px;
+  cursor: pointer;
+  font-size: 2.2em;
+  color: #fff;
+  font-weight: 500;
+  top: 1.2em;
+  right: 2.3em;
+  transition: .5s;
+}
+
+.btnLogin-popup:hover {
+  background: #9167fb;
+  color: white;
+}
+
+.logo {
+  font-size: 5.5em;
+  color: #9167fb;
+  user-select: none;
+  position: absolute;
+  top: 0.4em; /* Aligns to the top */
+  left: 1.3em; /* Aligns to the left */
+  margin: 0;
+}
+
+
+.fadeUpText {
+  animation: fadeUpText 1s forwards;
+}
+
+

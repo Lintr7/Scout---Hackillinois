@@ -1,0 +1,396 @@
+body {
+    font-family: Signika Negative, sans-serif;
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .wrapper {
+    position: absolute;
+    margin: 0 auto;
+    width: 800px;  /* Increased width */
+    height: 700px; /* Increased height */
+    padding: 40px; /* Increased padding */
+    margin-top: 16px;
+    top: 50.5em;
+    bottom: 0;
+    right: 0;
+    left: -75em;
+    transform: scale(1.7);
+  }
+  
+  .candle {
+    width: 22px;  /* Increased width */
+    height: 80px; /* Increased height */
+    position: relative;
+    top: 40px;   /* Adjusted to fit new size */
+    margin-top: 8px;  /* Increased margin to spread candles more */
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    color: #333;
+    background-color: #FB5754;
+  }
+  
+  .candle::after {
+    content: '';
+    height: 140px;  /* Increased the height of the candle's flame */
+    width: 2px;     /* Slightly increased the width for flame */
+    display: block;
+    position: relative;
+    left: 9.5px;  /* Adjusted position */
+    top: -15px; /* Adjusted flame position */
+    background-color: #FB5754;
+  }
+  
+  .c1 {
+    top: 350px;
+    height: 110px;
+    background-color: #29BB9B;
+  }
+  
+  .c1::after {
+    display: none;
+  }
+  
+  .c2 {
+    height: 30px;
+    top: 250px;
+  }
+  
+  .c2::after {
+    height: 50px;
+    background-color: #FB5754;
+  }
+  
+  .c3 {
+    height: 50px;
+    top: 250px;
+    background-color: #29BB9B;
+  }
+  
+  .c3::after {
+    top: 20px;
+    height: 50px;
+    background-color: #29BB9B;
+  }
+  
+  .c4 {
+    height: 80px;
+    top: 220px;
+    background-color: #29BB9B;
+  }
+  
+  .c4::after {
+    top: 20px;
+    height: 80px;
+    background-color: #29BB9B;
+  }
+  
+  .c5 {
+    height: 80px;
+    top: 220px;
+  }
+  
+  .c5::after {
+    top: 20px;
+    height: 90px;
+  }
+  
+  .c6 {
+    height: 90px;
+    top: 290px;
+  }
+  
+  .c6::after {
+    top: 30px;
+    height: 80px;
+  }
+  
+  .c7 {
+    height: 60px;
+    top: 290px;
+    background-color: #29BB9B;
+  }
+  
+  .c7::after {
+    top: -30px;
+    height: 130px;
+    background-color: #29BB9B;
+  }
+  
+  .c8 {
+    height: 80px;
+    top: 220px;
+    background-color: #29BB9B;
+  }
+  
+  .c8::after {
+    top: -30px;
+    height: 120px;
+    background-color: #29BB9B;
+  }
+  
+  .c9 {
+    height: 60px;
+    top: 210px;
+  }
+  
+  .c9::after {
+    top: -20px;
+    height: 120px;
+  }
+  
+  .c10 {
+    height: 120px;
+    top: 210px;
+    background-color: #29BB9B;
+  }
+  
+  .c10::after {
+    top: -30px;
+    height: 240px;
+    background-color: #29BB9B;
+  }
+  
+  .c11 {
+    height: 50px;
+    top: 140px;
+  }
+  
+  .c11::after {
+    top: 20px;
+    height: 50px;
+  }
+  
+  .c12 {
+    height: 30px;
+    top: 170px;
+  }
+  
+  .c12::after {
+    top: -20px;
+    height: 70px;
+  }
+  
+  .c13 {
+    height: 30px;
+    top: 190px;
+    background-color: #29BB9B;
+  }
+  
+  .c13::after {
+    top: -20px;
+    height: 60px;
+    background-color: #29BB9B;
+  }
+  
+  .c14 {
+    height: 30px;
+    top: 210px;
+  }
+  
+  .c14::after {
+    top: -20px;
+    height: 60px;
+  }
+  
+  .c15 {
+    height: 20px;
+    top: 210px;
+    background-color: #29BB9B;
+  }
+  
+  .c15::after {
+    top: -20px;
+    height: 50px;
+    background-color: #29BB9B;
+  }
+  
+  .c16 {
+    height: 80px;
+    top: 200px;
+    background-color: #29BB9B;
+  }
+  
+  .c16::after {
+    top: 0px;
+    height: 120px;
+    background-color: #29BB9B;
+  }
+  
+  .c17 {
+    height: 60px;
+    top: 120px;
+    background-color: #29BB9B;
+  }
+  
+  .c17::after {
+    top: -30px;
+    height: 120px;
+    background-color: #29BB9B;
+  }
+  
+  .c18 {
+    height: 20px;
+    top: 60px;
+    background-color: #29BB9B;
+  }
+  
+  .c18::after {
+    top: -40px;
+    height: 80px;
+    background-color: #29BB9B;
+  }
+  
+  .c19 {
+    height: 20px;
+    top: 40px;
+    background-color: #29BB9B;
+  }
+  
+  .c19::after {
+    top: -20px;
+    height: 50px;
+    background-color: #29BB9B;
+  }
+  
+  .c20 {
+    height: 50px;
+    top: 30px;
+    background-color: #29BB9B;
+  }
+  
+  .c20::after {
+    top: -40px;
+    height: 120px;
+    background-color: #29BB9B;
+  }
+  
+  .c21 {
+    height: 150px;
+    top: 140px;
+  }
+  
+  .c21::after {
+    top: -30px;
+    height: 180px;
+  }
+  
+  .c22 {
+    height: 120px;
+    top: 240px;
+  }
+  
+  .c22::after {
+    top: -30px;
+    height: 180px;
+  }
+  
+  .c23 {
+    height: 30px;
+    top: 270px;
+  }
+  
+  .c23::after {
+    top: -70px;
+    height: 180px;
+  }
+  
+  .c24 {
+    height: 40px;
+    top: 270px;
+    background-color: #29BB9B;
+  }
+  
+  .c24::after {
+    top: -20px;
+    height: 60px;
+    background-color: #29BB9B;
+  }
+  
+  .c25 {
+    height: 80px;
+    top: 240px;
+    background-color: #29BB9B;
+  }
+  
+  .c25::after {
+    top: -50px;
+    height: 160px;
+    background-color: #29BB9B;
+  }
+  
+  .c26 {
+    height: 20px;
+    top: 150px;
+    background-color: #29BB9B;
+  }
+  
+  .c26::after {
+    top: -20px;
+    height: 50px;
+    background-color: #29BB9B;
+  }
+  
+  .c27 {
+    height: 30px;
+    top: 130px;
+    background-color: #29BB9B;
+  }
+  
+  .c27::after {
+    top: -50px;
+    height: 120px;
+    background-color: #29BB9B;
+  }
+  
+  .c28 {
+    height: 20px;
+    top: 100px;
+    background-color: #29BB9B;
+  }
+  
+  .c28::after {
+    top: 0px;
+    height: 30px;
+    background-color: #29BB9B;
+  }
+  
+  .c29 {
+    height: 60px;
+    top: 90px;
+    background-color: #29BB9B;
+  }
+  
+  .c29::after {
+    top: -20px;
+    height: 70px;
+    background-color: #29BB9B;
+  }
+  
+  .c30 {
+    height: 40px;
+    top: 40px;
+    background-color: #29BB9B;
+  }
+  
+  .c30::after {
+    top: -20px;
+    height: 60px;
+    background-color: #29BB9B;
+  }
+  
+  .c31 {
+    height: 40px;
+    top: 20px;
+    background-color: #29BB9B;
+  }
+  
+  .c31::after {
+    top: 0px;
+    height: 60px;
+    background-color: #29BB9B;
+  }
+  
+ 
+  
