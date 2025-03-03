@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background:  #12182a;
+    background:  #101628;
     color: white;             
     height: 100vh;            
     font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateY(0);  
+    transform: translateY(0);   
   }
 }
 
