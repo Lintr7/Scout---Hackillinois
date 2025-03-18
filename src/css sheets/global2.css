@@ -1,4 +1,4 @@
-body {
+.wrapper {
     margin: 0;
     background:  #101628;
     color: white;             
@@ -34,7 +34,7 @@ body {
   }
 }
 
-.btnLogin-popup {
+.btnLoginPopup {
   position: absolute;
   width: 220px;
   height: 110px;
@@ -51,7 +51,7 @@ body {
   transition: .5s;
 }
 
-.btnLogin-popup:hover {
+.btnLoginPopup:hover {
   background: #9167fb;
   color: white;
 }
