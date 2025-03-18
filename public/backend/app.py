@@ -17,7 +17,7 @@ CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://127.0.
 
 # Load S&P 500 companies
 def load_companies():
-    with open("/Users/travis/Scout-AI/scout-app/public/backend/sp_500_companies.csv", mode="r", encoding="utf-8") as file:
+    with open("/Users/travis/Hackillinois/my-app/public/backend/sp_500_companies.csv", mode="r", encoding="utf-8") as file:
         reader = csv.reader(file)
         for row in reader:  # Only one row in your file
             companies = [company.strip().lower() for company in row]  # Ensure all names are in lowercase

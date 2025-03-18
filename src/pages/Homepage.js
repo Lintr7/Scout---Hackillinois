@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import styles from '../css sheets/global2.css';
+import  '../css sheets/global2.css';
 import TinyLineChart from '../components/lines';
 import TinyLineChart2 from '../components/lines2';
 import TinyLineChart3 from '../components/lines3';
