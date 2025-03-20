@@ -14,7 +14,7 @@
 
 .logos {
   overflow: hidden;
-  padding: 1.2% 0;
+  padding: 1% 0;
   background: white;
   white-space: nowrap;
   position: relative;
@@ -46,7 +46,7 @@
 
 .logos-slide {
   display: inline-block;
-  animation: 20s slide infinite linear; 
+  animation: 15s slide infinite linear; 
 }
 
 .logos-slide img {
@@ -61,7 +61,7 @@
   }
 
   .logos-slide img {
-    max-height: 18px; 
+    max-height: 15px; 
     margin: 0 1.5vw; 
   }
 

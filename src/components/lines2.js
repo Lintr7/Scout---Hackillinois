@@ -37,7 +37,7 @@ export default function TinyLineChart2() {
       sx={{
         [`& .${lineElementClasses.root}`]: {
           stroke: 'rgba(140, 249, 115, 0.8)',
-          strokeWidth: 10.5,
+          strokeWidth: 10,
         },
         [`& .${markElementClasses.root}`]: {
           stroke: 'rgba(128, 254, 99, 0.8)',

@@ -15,7 +15,7 @@ function Homepage() {
   return (
     <div className='wrapper'>
       <div style={{ textAlign: 'center', marginTop: '50px' }}>
-        <Card className="fadeLeft" sx={{ position: 'relative', zIndex: '100', animation: 'fadeLeft 1s', background: 'rgb(51, 65, 94)', marginTop: '-7em', marginLeft: '49em', height: '15em', width: '28em', padding: '20px', display: 'inline-block', borderRadius: '20px' }}>
+        <Card className="fadeLeft" sx={{ position: 'relative', zIndex: '100', animation: 'fadeLeft 1s', background: 'rgb(51, 65, 94)', marginTop: '-8em', marginLeft: '49em', height: '14em', width: '26em', padding: '20px', display: 'inline-block', borderRadius: '20px' }}>
           <CardContent>
             <Link to="/stocks">
               <Button
@@ -23,10 +23,10 @@ function Homepage() {
                 sx={{
                   backgroundColor: 'rgb(47, 199, 148)',
                   color: 'white',
-                  padding: '1em 3em',
+                  padding: '0.9em 2.7em',
                   fontSize: '0.80rem',
-                  marginLeft: '-21em', 
-                  marginTop: '13em',  
+                  marginLeft: '-19.3em', 
+                  marginTop: '11.7em',  
                   '&:hover': {
                     backgroundColor: '#white',
                   }
@@ -35,23 +35,24 @@ function Homepage() {
                 Search
               </Button>
             </Link>
-            <h1 style={{position: 'relative', fontSize:'2.9rem', color:'rgb(252, 252, 211)', marginTop:'-4.7em', textAlign:'left', marginLeft:'0.1em', lineHeight:'1.1em', fontFamily: "'Times New Roman', serif"}}>Instant updates <br /> on your favorite <br /> S&P 500 Companies</h1>
+            <h1 style={{position: 'relative', fontSize:'2.7rem', color:'rgb(252, 252, 211)', marginTop:'-4.7em', textAlign:'left', marginLeft:'0.1em', lineHeight:'1.1em', fontFamily: "'Times New Roman', serif"}}>Instant updates <br /> on your favorite <br /> S&P 500 Companies</h1>
           </CardContent>
         </Card>
         <button className='btnLoginPopup'>Login</button>
+        <img src='/logoScout.png' alt='logo' style={{position:'absolute', marginLeft:'-82.8em', width: '2.5em', height:'auto', marginTop: '-27.1em'}}></img>
         <h2 className='logo'>Scout</h2>
-        <h1 className="fadeUpText" style={{ animation: 'fadeUpText 1s forwards', position: 'relative', color: 'rgb(151, 239, 210)', fontSize: '5.7em', marginLeft: '-6em', marginTop: '-5.5em' }}>Market Insights <br /> Powered by AI</h1>
+        <h1 className="fadeUpText" style={{ animation: 'fadeUpText 1s forwards', position: 'relative', color: 'rgb(151, 239, 210)', fontSize: '5.4em', marginLeft: '-6.7em', marginTop: '-5.4em' }}>Market Insights <br /> Powered by AI</h1>
 
-          <div style={{position: 'absolute', marginTop: '-29em', marginLeft: '-54.3em', transform: 'scale(0.5)'}}>
+          <div style={{position: 'absolute', marginTop: '-29em', marginLeft: '-55.3em', transform: 'scale(0.5)'}}>
             <TinyLineChart/>
           </div>
-          <div style={{position: 'absolute', marginTop: '-31.5em', marginLeft: '-54.3em', transform: 'scale(0.5)'}}>
+          <div style={{position: 'absolute', marginTop: '-31.5em', marginLeft: '-55.3em', transform: 'scale(0.5)'}}>
             <TinyLineChart2/>
           </div>
-          <div style={{position: 'absolute', marginTop: '-31.2em', marginLeft: '-54.3em', transform: 'scale(0.5)'}}>
+          <div style={{position: 'absolute', marginTop: '-30.5em', marginLeft: '-55.3em', transform: 'scale(0.5)'}}>
             <TinyLineChart3/>
           </div>
-          <div style={{position: 'absolute',  marginTop:'48.7em', marginLeft:'-7em'}}>
+          <div style={{position: 'absolute',  marginTop:'50.3em', marginLeft:'-7em'}}>
             <Slideshow/>
         </div>
       </div>
