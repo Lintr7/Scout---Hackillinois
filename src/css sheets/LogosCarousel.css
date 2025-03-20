@@ -14,7 +14,7 @@
 
 .logos {
   overflow: hidden;
-  padding: 1% 0;
+  padding: 1.2% 0;
   background: white;
   white-space: nowrap;
   position: relative;
@@ -50,7 +50,7 @@
 }
 
 .logos-slide img {
-  max-height: 1.5em; 
+  max-height: 3.2em; 
   margin: 0 1.5vw; 
 }
 

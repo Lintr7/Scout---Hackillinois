@@ -51,7 +51,7 @@ function Homepage() {
           <div style={{position: 'absolute', marginTop: '-31.2em', marginLeft: '-54.3em', transform: 'scale(0.5)'}}>
             <TinyLineChart3/>
           </div>
-          <div style={{position: 'absolute',  marginTop:'77.7em', transform:'scale(1.9)', marginLeft:'0px'}}>
+          <div style={{position: 'absolute',  marginTop:'48.7em', marginLeft:'-7em'}}>
             <Slideshow/>
         </div>
       </div>
