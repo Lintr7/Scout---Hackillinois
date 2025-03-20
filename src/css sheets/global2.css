@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    position: relative;
   }
 
   
@@ -36,18 +37,18 @@
 
 .btnLoginPopup {
   position: absolute;
-  width: 220px;
-  height: 110px;
+  width: 6.4em;
+  height: 3.2em;
   background: transparent;
-  border: 5px solid #9167fb;
+  border: 4px solid #9167fb;
   outline: none;
   border-radius: 200px;
   cursor: pointer;
-  font-size: 2.2em;
+  font-size: 1.1em;
   color: #fff;
   font-weight: 500;
-  top: 1.2em;
-  right: 2.3em;
+  top: 1em;
+  right: 2em;
   transition: .5s;
 }
 
@@ -57,12 +58,12 @@
 }
 
 .logo {
-  font-size: 5.5em;
+  font-size: 2.5em;
   color: #9167fb;
   user-select: none;
   position: absolute;
-  top: 0.4em; /* Aligns to the top */
-  left: 1.3em; /* Aligns to the left */
+  top: 0.4em; 
+  left: 1.3em; 
   margin: 0;
 }
 

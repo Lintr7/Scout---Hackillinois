@@ -69,6 +69,7 @@ function StocksPage() {
   };
 
   return (
+    <div style={{transform: 'scale(0.7)'}}>
       <div style={styles.container}>
         <div style={styles.card}>
           <h2 style={styles.title}>📊 Stock Sentiment Analysis</h2>
@@ -114,6 +115,7 @@ function StocksPage() {
             </div>
           )}
         </div>
+      </div>
       </div>
   );
 }

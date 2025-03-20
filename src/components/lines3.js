@@ -39,13 +39,13 @@ export default function TinyLineChart3() {
       sx={{
         [`& .${lineElementClasses.root}`]: {
           stroke: 'rgba(0, 255, 255, 0.9)',
-          strokeWidth: 8,
+          strokeWidth: 10.5,
         },
         [`& .${markElementClasses.root}`]: {
           stroke: 'rgba(0, 255, 255, 0.9)',
           transform: 'scale(1)',
           fill: 'green',
-          strokeWidth: 15,
+          strokeWidth: 17,
         },
       }}
       disableAxisListener
