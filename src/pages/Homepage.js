@@ -15,7 +15,7 @@ function Homepage() {
   return (
     <div className='wrapper'>
       <div style={{ textAlign: 'center', marginTop: '50px' }}>
-        <Card className="fadeLeft" sx={{ position: 'relative', zIndex: '100', animation: 'fadeLeft 1s', background: 'rgb(51, 65, 94)', marginTop: '-8em', marginLeft: '49em', height: '14em', width: '26em', padding: '20px', display: 'inline-block', borderRadius: '20px' }}>
+        <Card className="fadeLeft" sx={{ position: 'absolute', zIndex: '1', animation: 'fadeLeft 1s', background: 'rgb(51, 65, 94)', marginTop: '11em', marginLeft: '10.1em', height: '14em', width: '26em', padding: '20px', display: 'inline-block', borderRadius: '20px' }}>
           <CardContent>
             <Link to="/stocks">
               <Button
@@ -39,20 +39,45 @@ function Homepage() {
           </CardContent>
         </Card>
         <button className='btnLoginPopup'>Login</button>
-        <img src='/logoScout.png' alt='logo' style={{position:'absolute', marginLeft:'-82.8em', width: '2.5em', height:'auto', marginTop: '-27.1em'}}></img>
-        <h2 className='logo'>Scout</h2>
-        <h1 className="fadeUpText" style={{ animation: 'fadeUpText 1s forwards', position: 'relative', color: 'rgb(151, 239, 210)', fontSize: '5.4em', marginLeft: '-6.7em', marginTop: '-5.4em' }}>Market Insights <br /> Powered by AI</h1>
+        <img src='/logoScout.png' alt='logo' style={{position:'absolute', top:'0.69em', width: '2.5em', height:'auto', left: '1.89em'}}></img>
 
-          <div style={{position: 'absolute', marginTop: '-29em', marginLeft: '-55.3em', transform: 'scale(0.5)'}}>
-            <TinyLineChart/>
-          </div>
-          <div style={{position: 'absolute', marginTop: '-31.5em', marginLeft: '-55.3em', transform: 'scale(0.5)'}}>
-            <TinyLineChart2/>
-          </div>
-          <div style={{position: 'absolute', marginTop: '-30.5em', marginLeft: '-55.3em', transform: 'scale(0.5)'}}>
-            <TinyLineChart3/>
-          </div>
-          <div style={{position: 'absolute',  marginTop:'50.3em', marginLeft:'-7em'}}>
+        <h2 style={{fontSize: '1.8em', color: '#9167fb', userSelect: 'none', position: 'absolute', top: '0.6em', left: '2.5em', margin: '0'}}>Scout</h2>
+        {/*help*/}
+        <h2 className="fadeUpText" style={{ fontSize: '10.3vh', maxWidth: '130vh', userSelect: 'none', position: 'absolute', top: '0.55em', left: '1.49em', color: 'rgb(151, 239, 210)', zIndex: '1'}}>Market Insights <br /> Powered by AI</h2>
+      <div style={{width:'100vw', height:'100vh', transform: 'scale(1.025)', marginTop: '-15em'}}>
+        <div style={{
+          position: 'relative', 
+          display: 'flex', 
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginTop:'-13em',
+          left:'0'
+        }}>
+          <TinyLineChart />
+        </div>
+        <div style={{
+          position: 'relative', 
+          display: 'flex', 
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginTop:'-65em',
+          left:'0'
+        }}>
+          <TinyLineChart2 />
+        </div>
+        <div style={{
+          position: 'relative', 
+          display: 'flex', 
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginTop:'-59.5em',
+          left:'0'
+        }}>
+          <TinyLineChart3 />
+        </div>
+        </div>
+
+          <div style={{position: 'fixed', left:'0em', bottom:'-0.3em', zIndex:'5'}}>
             <Slideshow/>
         </div>
       </div>

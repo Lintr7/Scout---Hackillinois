@@ -21,20 +21,20 @@ const logos = [
 
 const Slideshow = () => {
   return (
-    <div className='containerS'>
-        <div className="logos">
-        <div className="logos-slide">
-            {logos.map((logo, index) => (
-            <img key={index} src={logo} alt={`Logo ${index}`} />
-            ))}
-        </div>
-        <div className="logos-slide">
-            {logos.map((logo, index) => (
-            <img key={`duplicate-${index}`} src={logo} alt={`Logo ${index}`} />
-            ))}
-        </div>
-        </div>
+
+    <div className="logos">
+    <div className="logos-slide">
+        {logos.map((logo, index) => (
+        <img key={index} src={logo} alt={`Logo ${index}`} />
+        ))}
     </div>
+    <div className="logos-slide">
+        {logos.map((logo, index) => (
+        <img key={`duplicate-${index}`} src={logo} alt={`Logo ${index}`} />
+        ))}
+    </div>
+    </div>
+
   );
 };
 
