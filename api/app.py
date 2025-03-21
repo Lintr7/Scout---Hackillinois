@@ -15,9 +15,14 @@ openai.api_key = api_key
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://scout-hackillinois.vercel.app", "https://scout-hackillinois-git-main-travis-lins-projects.vercel.app"]}})
 
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+csv_path = os.path.join(base_dir, "backend", "sp_500_companies.csv")
+
+
 # Load S&P 500 companies
 def load_companies():
-    with open("/backend/sp_500_companies.csv", mode="r", encoding="utf-8") as file:
+    with open(csv_path, mode="r", encoding="utf-8") as file:
         reader = csv.reader(file)
         for row in reader:  # Only one row in your file
             companies = [company.strip().lower() for company in row]  # Ensure all names are in lowercase
@@ -62,4 +67,4 @@ def search_company():
     return jsonify({"sentiment": sentiment_analysis})
 
 #if __name__ == "__main__":
-#    app.run(debug=True)
+#   app.run(debug=True)
