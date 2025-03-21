@@ -7,17 +7,23 @@ from flask_cors import CORS
 from flask_cors import cross_origin
 import os
 from dotenv import load_dotenv
+from serverless_wsgi import handle_request
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 client = openai.OpenAI(api_key=api_key)
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "http://127.0.0.1:5000"]}})
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sp_500_companies.csv")
 
 # Load S&P 500 companies
 def load_companies():
-    with open("/Users/travis/Hackillinois/my-app/public/backend/sp_500_companies.csv", mode="r", encoding="utf-8") as file:
+    with open(csv_path, mode="r", encoding="utf-8") as file:
         reader = csv.reader(file)
         for row in reader:  # Only one row in your file
             companies = [company.strip().lower() for company in row]  # Ensure all names are in lowercase
@@ -25,7 +31,7 @@ def load_companies():
 
 sp500_companies = load_companies()
 
-@app.route('/search', methods=['POST'])
+@app.route('/api/search', methods=['POST'])
 @cross_origin() 
 def search_company():
     data = request.get_json()
@@ -61,5 +67,10 @@ def search_company():
 
     return jsonify({"sentiment": sentiment_analysis})
 
-if __name__ == "__main__":
-    app.run(debug=True)
+#if __name__ == "__main__":
+#   app.run(debug=True)
+handler = handle_request(app)
+
+
+def handler(event, context):
+    return handle_request(app, event, context)

@@ -35,11 +35,15 @@ function StocksPage() {
     setRecommendation("");
 
     try {
-      const response = await fetch("/api/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ company: query }),
-      });
+        const apiUrl = process.env.NODE_ENV === 'development' 
+          ? 'http://localhost:5000/api/search' 
+          : '/api/search';
+      
+        const response = await fetch(apiUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ company: query }),
+        });
 
       if (!response.ok) {
         const errorData = await response.json();
