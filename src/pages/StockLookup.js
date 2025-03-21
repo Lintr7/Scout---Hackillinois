@@ -6,7 +6,7 @@ export const StockLookup = () => {
   const [filteredStocks, setFilteredStocks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/stocks")
+    fetch("/api/stocks")
       .then((res) => res.json())
       .then((data) => setStocks(data))
       .catch((err) => console.error("Error fetching stocks:", err));

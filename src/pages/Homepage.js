@@ -77,7 +77,7 @@ function Homepage() {
         </div>
         </div>
 
-          <div style={{position: 'fixed', left:'0em', bottom:'-0.3em', zIndex:'5'}}>
+          <div style={{position: 'fixed', left:'0em', bottom:'-0.4em', zIndex:'5'}}>
             <Slideshow/>
         </div>
       </div>
